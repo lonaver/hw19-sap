@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useCallback } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./contact.module.css";
 

@@ -1,5 +1,9 @@
 import React from "react";
-import { Route, Routes as ReactRouterRouts } from "react-router-dom";
+import {
+  Route,
+  HashRouter,
+  Routes as ReactRouterRouts,
+} from "react-router-dom";
 
 import Nav from "../components/navigation/Nav";
 import HomePage from "../pages/home/Home.page";
@@ -35,17 +39,18 @@ export const appRouts = {
 const Routs = () => {
   return (
     <div>
-      <Nav />
-
-      <ReactRouterRouts>
-        {Object.values(appRouts).map(({ id, path, element }) => (
-          <Route key={id} path={path} element={element} />
-        ))}
-        <Route path="/contacts">
-          <Route path=":contactName" element={<UserSingle />}></Route>
-        </Route>
-        <Route path="*" element={<NoFound />} />
-      </ReactRouterRouts>
+      <HashRouter>
+        <Nav />
+        <ReactRouterRouts>
+          {Object.values(appRouts).map(({ id, path, element }) => (
+            <Route key={id} path={path} element={element} />
+          ))}
+          <Route path="/contacts">
+            <Route path=":contactName" element={<UserSingle />}></Route>
+          </Route>
+          <Route path="*" element={<NoFound />} />
+        </ReactRouterRouts>
+      </HashRouter>
     </div>
   );
 };
