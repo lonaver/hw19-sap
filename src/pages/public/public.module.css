@@ -1,0 +1,177 @@
+.page-public {
+  font-family: "Montserrat", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--color-font);
+  background-image: linear-gradient(
+    150deg,
+    rgb(63, 63, 129, 0.2),
+    rgba(250, 241, 68, 0.2)
+  );
+}
+
+.post {
+  width: 1200px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 40px;
+  border-color: transparent;
+}
+
+.post:nth-child(2n) {
+  background-color: var(--color-card-post);
+}
+.post:nth-child(2n + 1) {
+  background-color: var(--color-card-post-other);
+}
+
+.post_header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.header_date {
+  color: var(--color-second-font);
+  display: flex;
+  align-items: center;
+}
+.header_date::before {
+  content: url("../../image/checkmark.svg");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px var(--color-second-font);
+  border-style: dotted;
+  border-radius: 50%;
+}
+
+.post_title {
+  display: flex;
+  justify-content: start;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+.thumb_photo {
+  display: flex;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-size: contain;
+
+  overflow: hidden;
+  /* outline: 2px solid rgb(255, 71, 172); */
+}
+.post_image {
+  display: flex;
+  margin: 0;
+  width: 800px;
+  max-height: 600px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-size: contain;
+}
+.post_image img {
+  border-radius: 40px;
+}
+.block {
+  display: flex;
+  gap: 30px;
+}
+.chat_comment {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.chat_area ~ textarea {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 20px;
+  border-color: transparent;
+
+  background-color: var(--color-comment);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--color-font);
+  resize: none;
+}
+.input_field ~ textarea:focus {
+  outline-style: inherit;
+}
+.btn {
+  width: 160px;
+  height: 40px;
+  padding: 0px;
+  margin-top: 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-second-font);
+
+  background-color: transparent;
+  border: 1px solid var(--color-font);
+  border-radius: 25px;
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--color-comment);
+  background-color: var(--color-card-post);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.comment::before {
+  content: url("../../image/bubbles4.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.look::before {
+  content: url("../../image/spinner10.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.likes::before {
+  content: url("../../image/heart.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.download::before {
+  content: url("../../image/download.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

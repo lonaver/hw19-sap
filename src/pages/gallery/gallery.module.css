@@ -1,0 +1,30 @@
+.gallery {
+  height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  background-color: rgba(173, 255, 47, 0.2);
+}
+.item img {
+  height: 250px;
+}
+.item {
+  width: calc((100%- (10px)) / 3);
+  height: 350px;
+  border-radius: 25px;
+  border-color: transparent;
+  background-size: contain;
+
+  overflow: hidden;
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+.item p {
+  padding: 30px 15px;
+}

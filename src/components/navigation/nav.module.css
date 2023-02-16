@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: rgb(255, 127, 80, 0.2);
+}
+.public-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: rgb(63, 63, 129, 0.2);
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: rgba(173, 255, 47, 0.2);
+}
+.contact-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: rgb(245, 245, 220);
+}
