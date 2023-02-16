@@ -5,20 +5,18 @@ import { appRouts } from "../../routs/Routs";
 
 import styles from "./nav.module.css";
 
-// const { home, publicPage, gallery, contact } = appRouts;
-
 const Nav = () => {
   const location = useLocation();
   let locationPath = location.pathname;
   let bcgColor = "contact-nav";
   switch (locationPath) {
-    case "/public":
+    case "/hw19-sap/public":
       bcgColor = "public-nav";
       break;
-    case "/gallery":
+    case "/hw19-sap/gallery":
       bcgColor = "gallery-nav";
       break;
-    case "/":
+    case "/hw19-sap/":
       bcgColor = "home-nav";
       break;
     default:

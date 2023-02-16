@@ -16,7 +16,8 @@
   height: 250px;
 }
 .item {
-  width: calc((100%- (10px)) / 3);
+  /* width: calc((100% - 30px) / 3); */
+  width: 400px;
   height: 350px;
   border-radius: 25px;
   border-color: transparent;
