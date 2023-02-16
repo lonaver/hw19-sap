@@ -16,22 +16,22 @@ import UserSingle from "../pages/user-single/UserSingle";
 export const appRouts = {
   home: {
     id: 1,
-    path: "/",
+    path: "/hw19-sap/",
     element: <HomePage />,
   },
   publicPage: {
     id: 2,
-    path: "/public",
+    path: "/hw19-sap/public",
     element: <PublicPage />,
   },
   gallery: {
     id: 3,
-    path: "/gallery",
+    path: "/hw19-sap/gallery",
     element: <GalleryPage />,
   },
   contact: {
     id: 4,
-    path: "/contact",
+    path: "/hw19-sap/contact",
     element: <ContactPage />,
   },
 };
@@ -39,18 +39,16 @@ export const appRouts = {
 const Routs = () => {
   return (
     <div>
-      <HashRouter>
-        <Nav />
-        <ReactRouterRouts>
-          {Object.values(appRouts).map(({ id, path, element }) => (
-            <Route key={id} path={path} element={element} />
-          ))}
-          <Route path="/contacts">
-            <Route path=":contactName" element={<UserSingle />}></Route>
-          </Route>
-          <Route path="*" element={<NoFound />} />
-        </ReactRouterRouts>
-      </HashRouter>
+      <Nav />
+      <ReactRouterRouts>
+        {Object.values(appRouts).map(({ id, path, element }) => (
+          <Route key={id} path={path} element={element} />
+        ))}
+        <Route path="/hw19-sap/contacts">
+          <Route path=":contactName" element={<UserSingle />}></Route>
+        </Route>
+        <Route path="*" element={<NoFound />} />
+      </ReactRouterRouts>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Component = ({
 }) => {
   const navigate = useNavigate();
   const navigateHandler = () => {
-    navigate(`/contacts/${lastName}`, {
+    navigate(`/hw19-sap/contacts/${lastName}`, {
       state: {
         firstName,
         lastName,
