@@ -48,14 +48,14 @@ const Component = ({
           phone:<span>{`${phone}`}</span>
         </div>
         <div className={getClassGender(gender)}>{`gender: ${gender}`}</div>
-        {/* {
+        {
           <ReactRouterRouts>
             <Route
-              path="/hw19-sap/contacts/:contactName"
-              component={UserSingle}
+              path="/hw19-sap/contact:contactName"
+              component={<UserSingle />}
             />
           </ReactRouterRouts>
-        } */}
+        }
       </a>
     </li>
   );
