@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Route,
-  HashRouter,
-  Routes as ReactRouterRouts,
-} from "react-router-dom";
+import { Route, Routes as ReactRouterRouts } from "react-router-dom";
 
 import Nav from "../components/navigation/Nav";
 import HomePage from "../pages/home/Home.page";
@@ -46,7 +42,10 @@ const Routs = () => {
         ))}
         {
           <Route exact path="/hw19-sap/contacts">
-            <Route path=":contactName" element={<UserSingle />}></Route>
+            <Route
+              path="/hw19-sap/contacts:contactName"
+              element={<UserSingle />}
+            ></Route>
           </Route>
         }
         <Route path="*" element={<NoFound />} />
