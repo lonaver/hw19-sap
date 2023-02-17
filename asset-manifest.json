@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hw19-sap/static/css/main.f4574094.css",
-    "main.js": "/hw19-sap/static/js/main.5ba4146e.js",
+    "main.js": "/hw19-sap/static/js/main.63c249da.js",
     "static/js/787.2a769471.chunk.js": "/hw19-sap/static/js/787.2a769471.chunk.js",
     "static/media/spinner10.svg": "/hw19-sap/static/media/spinner10.f3362b6ead69c21601bc.svg",
     "static/media/bubbles4.svg": "/hw19-sap/static/media/bubbles4.9edf28a2eb9b2eb0661d.svg",
@@ -12,11 +12,11 @@
     "static/media/download.svg": "/hw19-sap/static/media/download.e556a8aeb5c555fa8c26.svg",
     "static/media/checkmark.svg": "/hw19-sap/static/media/checkmark.ad35ae4b7d6c4a9f1b50.svg",
     "main.f4574094.css.map": "/hw19-sap/static/css/main.f4574094.css.map",
-    "main.5ba4146e.js.map": "/hw19-sap/static/js/main.5ba4146e.js.map",
+    "main.63c249da.js.map": "/hw19-sap/static/js/main.63c249da.js.map",
     "787.2a769471.chunk.js.map": "/hw19-sap/static/js/787.2a769471.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4574094.css",
-    "static/js/main.5ba4146e.js"
+    "static/js/main.63c249da.js"
   ]
 }
