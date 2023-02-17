@@ -1,6 +1,12 @@
 import React from "react";
+
 import { useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import {
+  Route,
+  useNavigate,
+  Routes as ReactRouterRouts,
+} from "react-router-dom";
+import UserSingle from "../user-single/UserSingle";
 
 import styles from "./contact.module.css";
 
@@ -21,7 +27,7 @@ const Component = ({
 }) => {
   const navigate = useNavigate();
   const navigateHandler = () => {
-    navigate(`/hw19-sap/contacts/${lastName}`, {
+    navigate(`/hw19-sap/contact/${lastName}`, {
       state: {
         firstName,
         lastName,
@@ -42,6 +48,14 @@ const Component = ({
           phone:<span>{`${phone}`}</span>
         </div>
         <div className={getClassGender(gender)}>{`gender: ${gender}`}</div>
+        {/* {
+          <ReactRouterRouts>
+            <Route
+              path="/hw19-sap/contacts/:contactName"
+              component={UserSingle}
+            />
+          </ReactRouterRouts>
+        } */}
       </a>
     </li>
   );

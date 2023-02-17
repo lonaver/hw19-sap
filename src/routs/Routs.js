@@ -41,9 +41,10 @@ const Routs = () => {
           <Route key={id} path={path} element={element} />
         ))}
         {
-          <Route exact path="/hw19-sap/contacts">
+          <Route exact path="/hw19-sap/contact">
             <Route
-              path="/hw19-sap/contacts:contactName"
+              exact
+              path="/hw19-sap/contact/:contactName"
               element={<UserSingle />}
             ></Route>
           </Route>
