@@ -44,9 +44,11 @@ const Routs = () => {
         {Object.values(appRouts).map(({ id, path, element }) => (
           <Route key={id} path={path} element={element} />
         ))}
-        <Route path="/hw19-sap/contacts">
-          <Route path=":contactName" element={<UserSingle />}></Route>
-        </Route>
+        {
+          <Route exact path="/hw19-sap/contacts">
+            <Route path=":contactName" element={<UserSingle />}></Route>
+          </Route>
+        }
         <Route path="*" element={<NoFound />} />
       </ReactRouterRouts>
     </div>
