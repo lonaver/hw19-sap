@@ -6,11 +6,13 @@ import classes from "./userSingle.module.css";
 
 const UserSingle = () => {
   const { contactName } = useParams();
+  const decodedContactName = decodeURIComponent(contactName);
+
   const location = useLocation();
   return (
     <div className={classes["page-contact-single"]}>
       <h1 className={classes["card-contactName"]}>
-        name contact: {contactName}
+        name contact: {decodedContactName}
       </h1>
       <div className={classes["card-contact"]}>
         <div className={styles["nameAb"]}>

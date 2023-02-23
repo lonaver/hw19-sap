@@ -22,7 +22,7 @@ const Component = ({
 }) => {
   const navigate = useNavigate();
   const navigateHandler = () => {
-    navigate(`/hw19-sap/contact/${lastName}`, {
+    navigate(`/hw19-sap/contact/${encodeURIComponent(lastName)}`, {
       state: {
         firstName,
         lastName,
